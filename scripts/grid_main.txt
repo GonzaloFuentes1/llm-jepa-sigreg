@@ -1,0 +1,96 @@
+# Main grid. One line per run: TAG SEED [train args]. Ordered by priority.
+# Defaults: lr 2e-5, 4 epochs, global batch 128, k=1, label scope 'all' (as the official
+# collator), dedicated pad <|finetune_right_pad_id|>. '_padeos' = official pad = eos.
+# beta values chosen on a validation split (scripts/grid_beta_pilot.txt, results/pilot_beta.md).
+# Run with: sbatch scripts/worker.sbatch scripts/grid_main.txt  (twice, for 2 GPUs)
+base_zeroshot 82 --epochs 0
+regular 82 
+regular 23 
+regular 37 
+regular 84 
+regular 4 
+jepa_l1 82 --lbd 1
+jepa_l1 23 --lbd 1
+jepa_l1 37 --lbd 1
+jepa_l1 84 --lbd 1
+jepa_l1 4 --lbd 1
+regular_padeos 82 --pad-as-eos
+regular_padeos 23 --pad-as-eos
+regular_padeos 37 --pad-as-eos
+regular_padeos 84 --pad-as-eos
+regular_padeos 4 --pad-as-eos
+jepa_l1_padeos 82 --lbd 1 --pad-as-eos
+jepa_l1_padeos 23 --lbd 1 --pad-as-eos
+jepa_l1_padeos 37 --lbd 1 --pad-as-eos
+jepa_l1_padeos 84 --lbd 1 --pad-as-eos
+jepa_l1_padeos 4 --lbd 1 --pad-as-eos
+jepa_l1_sig0.001 82 --lbd 1 --beta 0.001
+jepa_l1_sig0.001 23 --lbd 1 --beta 0.001
+jepa_l1_sig0.001 37 --lbd 1 --beta 0.001
+jepa_l1_sig0.001 84 --lbd 1 --beta 0.001
+jepa_l1_sig0.001 4 --lbd 1 --beta 0.001
+jepa_l1_sig0.01 82 --lbd 1 --beta 0.01
+jepa_l1_sig0.01 23 --lbd 1 --beta 0.01
+jepa_l1_sig0.01 37 --lbd 1 --beta 0.01
+jepa_l1_sig0.01 84 --lbd 1 --beta 0.01
+jepa_l1_sig0.01 4 --lbd 1 --beta 0.01
+jepa_l0.5 82 --lbd 0.5
+jepa_l0.5 23 --lbd 0.5
+jepa_l0.5 37 --lbd 0.5
+jepa_l0.5 84 --lbd 0.5
+jepa_l0.5 4 --lbd 0.5
+jepa_l2 82 --lbd 2
+jepa_l2 23 --lbd 2
+jepa_l2 37 --lbd 2
+jepa_l2 84 --lbd 2
+jepa_l2 4 --lbd 2
+jepa_l0.5_sig0.001 82 --lbd 0.5 --beta 0.001
+jepa_l0.5_sig0.001 23 --lbd 0.5 --beta 0.001
+jepa_l0.5_sig0.001 37 --lbd 0.5 --beta 0.001
+jepa_l0.5_sig0.001 84 --lbd 0.5 --beta 0.001
+jepa_l0.5_sig0.001 4 --lbd 0.5 --beta 0.001
+jepa_l2_sig0.001 82 --lbd 2 --beta 0.001
+jepa_l2_sig0.001 23 --lbd 2 --beta 0.001
+jepa_l2_sig0.001 37 --lbd 2 --beta 0.001
+jepa_l2_sig0.001 84 --lbd 2 --beta 0.001
+jepa_l2_sig0.001 4 --lbd 2 --beta 0.001
+ntp_sig0.001 82 --beta 0.001
+ntp_sig0.001 23 --beta 0.001
+ntp_sig0.001 37 --beta 0.001
+ntp_sig0.001 84 --beta 0.001
+ntp_sig0.001 4 --beta 0.001
+ntp_sig0.01 82 --beta 0.01
+ntp_sig0.01 23 --beta 0.01
+ntp_sig0.01 37 --beta 0.01
+ntp_sig0.01 84 --beta 0.01
+ntp_sig0.01 4 --beta 0.01
+jepa_l0.5_sig0.01 82 --lbd 0.5 --beta 0.01
+jepa_l0.5_sig0.01 23 --lbd 0.5 --beta 0.01
+jepa_l0.5_sig0.01 37 --lbd 0.5 --beta 0.01
+jepa_l0.5_sig0.01 84 --lbd 0.5 --beta 0.01
+jepa_l0.5_sig0.01 4 --lbd 0.5 --beta 0.01
+jepa_l2_sig0.01 82 --lbd 2 --beta 0.01
+jepa_l2_sig0.01 23 --lbd 2 --beta 0.01
+jepa_l2_sig0.01 37 --lbd 2 --beta 0.01
+jepa_l2_sig0.01 84 --lbd 2 --beta 0.01
+jepa_l2_sig0.01 4 --lbd 2 --beta 0.01
+jepa_l0.5_padeos 82 --lbd 0.5 --pad-as-eos
+jepa_l0.5_padeos 23 --lbd 0.5 --pad-as-eos
+jepa_l0.5_padeos 37 --lbd 0.5 --pad-as-eos
+jepa_l0.5_padeos 84 --lbd 0.5 --pad-as-eos
+jepa_l0.5_padeos 4 --lbd 0.5 --pad-as-eos
+jepa_l2_padeos 82 --lbd 2 --pad-as-eos
+jepa_l2_padeos 23 --lbd 2 --pad-as-eos
+jepa_l2_padeos 37 --lbd 2 --pad-as-eos
+jepa_l2_padeos 84 --lbd 2 --pad-as-eos
+jepa_l2_padeos 4 --lbd 2 --pad-as-eos
+regular_asst 82 --label-scope assistant
+regular_asst 23 --label-scope assistant
+regular_asst 37 --label-scope assistant
+regular_asst 84 --label-scope assistant
+regular_asst 4 --label-scope assistant
+jepa_l1_asst 82 --lbd 1 --label-scope assistant
+jepa_l1_asst 23 --lbd 1 --label-scope assistant
+jepa_l1_asst 37 --lbd 1 --label-scope assistant
+jepa_l1_asst 84 --lbd 1 --label-scope assistant
+jepa_l1_asst 4 --lbd 1 --label-scope assistant

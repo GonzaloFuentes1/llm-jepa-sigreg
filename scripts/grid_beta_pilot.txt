@@ -1,0 +1,10 @@
+# Pilot: choose the SIGReg weight beta on a validation split carved from the training set
+# Run with: sbatch scripts/worker.sbatch scripts/grid_beta_pilot.txt
+# (train on the first 7000 training examples, evaluate on the last 1000; test set unused).
+# LLM-JEPA with lambda=1, k=1, seed 82.
+pilot_beta0      82 --lbd 1 --beta 0     --holdout 1000
+pilot_beta0.001  82 --lbd 1 --beta 0.001 --holdout 1000
+pilot_beta0.003  82 --lbd 1 --beta 0.003 --holdout 1000
+pilot_beta0.01   82 --lbd 1 --beta 0.01  --holdout 1000
+pilot_beta0.03   82 --lbd 1 --beta 0.03  --holdout 1000
+pilot_beta0.1    82 --lbd 1 --beta 0.1   --holdout 1000
