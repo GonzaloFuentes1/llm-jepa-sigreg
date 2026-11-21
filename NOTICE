@@ -1,0 +1,22 @@
+llm-jepa-sigreg
+Copyright 2026 Gonzalo Fuentes
+
+This project is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Third-party material
+--------------------
+
+NL-RX-SYNTH data. The training and test files (synth_train.jsonl, synth_test.jsonl)
+are not stored in this repository. They are downloaded at run time from the official
+LLM-JEPA repository, https://github.com/galilai-group/llm-jepa (Apache License 2.0),
+commit ea0017c654ad917066ff32afc88276bea8ca5f7e, and checked against pinned sha256
+digests. The data were preprocessed by the LLM-JEPA authors from NL-RX
+(Locascio et al., 2016, arXiv:1608.03000).
+
+SIGReg. The SIGReg term uses the reference implementation in the lejepa package,
+https://github.com/galilai-group/lejepa, installed as a dependency at commit
+c293d291ca87cd4fddee9d3fffe4e914c7272052; it is not vendored here.
+
+No code from the official LLM-JEPA repository is included. The training objective,
+the data views and the evaluation rule were reimplemented from its description and
+from reading its finetune.py and evaluate.py.

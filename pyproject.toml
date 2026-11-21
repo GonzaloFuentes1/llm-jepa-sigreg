@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-jepa-sigreg"
+version = "0.1.0"
+description = "Reproduction of LLM-JEPA on NL-RX-SYNTH and an SIGReg extension"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.4",
+    "transformers>=5.24,<6",
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "lejepa @ git+https://github.com/galilai-group/lejepa@c293d291ca87cd4fddee9d3fffe4e914c7272052",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
