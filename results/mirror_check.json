@@ -1,0 +1,57 @@
+{
+  "weights_sha256": {
+    "meta": "1ff795ff6a07e6a68085d206fb84417da2f083f68391c2843cd2b8ac6df8538f",
+    "unsloth": "1ff795ff6a07e6a68085d206fb84417da2f083f68391c2843cd2b8ac6df8538f"
+  },
+  "meta_copy_blob_ids_match": {
+    "config.json": true,
+    "generation_config.json": true,
+    "tokenizer.json": true,
+    "tokenizer_config.json": true
+  },
+  "unsloth_blob_ids_match_meta": {
+    "config.json": false,
+    "generation_config.json": false,
+    "tokenizer.json": false,
+    "tokenizer_config.json": false
+  },
+  "weights_identical": true,
+  "config_differences": {
+    "eos_token_id": {
+      "meta": [
+        128001,
+        128008,
+        128009
+      ],
+      "unsloth": 128009
+    },
+    "pad_token_id": {
+      "meta": null,
+      "unsloth": 128004
+    },
+    "transformers_version": {
+      "meta": "4.45.0.dev0",
+      "unsloth": "4.52.0.dev0"
+    },
+    "unsloth_fixed": {
+      "meta": null,
+      "unsloth": true
+    }
+  },
+  "tokenizer_settings": {
+    "meta": {
+      "pad_token": null,
+      "padding_side": "right",
+      "eos": "<|eot_id|>"
+    },
+    "unsloth": {
+      "pad_token": "<|finetune_right_pad_id|>",
+      "padding_side": "left",
+      "eos": "<|eot_id|>"
+    }
+  },
+  "tokenization": {
+    "examples": 10000,
+    "mismatches": 0
+  }
+}

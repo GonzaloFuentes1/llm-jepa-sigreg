@@ -1,0 +1,24 @@
+Loaded 4 examples from /home/gofuentes/perfil/runs/scratch/official_probe/synth4.jsonl
+===== pad = eos (official fallback) (pad_token_id=128009, eos_id=128009)
+example 0 user      view: index 47 -> '<|predictor_1|>' (next '<|eot_id|>')
+example 0 assistant view: index 47 -> ')*' (next '<|eot_id|>')
+example 0 full view: 77 real tokens, 74 supervised (first '<|begin_of_text|>'); labels at the 3 genuine <|eot_id|>: [-100, -100, -100]
+  text view: '<|begin_of_text|><|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 21 Nov 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nlines with words with a vowel and a lower-case letter, zero or more times<|predictor_1|><|eot_id|>'
+  code view: '<|begin_of_text|><|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 21 Nov 2026\n\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n(\\b([AEIOUaeiou])&([a-z])\\b)*<|eot_id|>'
+example 1 user      view: index 46 -> '<|predictor_1|>' (next '<|eot_id|>')
+example 1 assistant view: index 43 -> 'b' (next '<|eot_id|>')
+example 1 full view: 72 real tokens, 69 supervised (first '<|begin_of_text|>'); labels at the 3 genuine <|eot_id|>: [-100, -100, -100]
+  text view: "<|begin_of_text|><|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 21 Nov 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nlines with words with a number and a character or the string 'dog'<|predictor_1|><|eot_id|>"
+  code view: '<|begin_of_text|><|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 21 Nov 2026\n\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n\\b(([0-9])&(.))|(dog)\\b<|eot_id|>'
+Loaded 4 examples from /home/gofuentes/perfil/runs/scratch/official_probe/synth4.jsonl
+===== pad = <|finetune_right_pad_id|> (pad_token_id=128004, eos_id=128009)
+example 0 user      view: index 47 -> '<|predictor_1|>' (next '<|eot_id|>')
+example 0 assistant view: index 47 -> ')*' (next '<|eot_id|>')
+example 0 full view: 77 real tokens, 77 supervised (first '<|begin_of_text|>'); labels at the 3 genuine <|eot_id|>: [128009, 128009, 128009]
+  text view: '<|begin_of_text|><|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 21 Nov 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nlines with words with a vowel and a lower-case letter, zero or more times<|predictor_1|><|eot_id|>'
+  code view: '<|begin_of_text|><|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 21 Nov 2026\n\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n(\\b([AEIOUaeiou])&([a-z])\\b)*<|eot_id|>'
+example 1 user      view: index 46 -> '<|predictor_1|>' (next '<|eot_id|>')
+example 1 assistant view: index 43 -> 'b' (next '<|eot_id|>')
+example 1 full view: 72 real tokens, 72 supervised (first '<|begin_of_text|>'); labels at the 3 genuine <|eot_id|>: [128009, 128009, 128009]
+  text view: "<|begin_of_text|><|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 21 Nov 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nlines with words with a number and a character or the string 'dog'<|predictor_1|><|eot_id|>"
+  code view: '<|begin_of_text|><|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 21 Nov 2026\n\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n\\b(([0-9])&(.))|(dog)\\b<|eot_id|>'

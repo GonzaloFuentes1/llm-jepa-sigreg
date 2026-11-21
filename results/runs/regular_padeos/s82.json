@@ -1,0 +1,67 @@
+{
+  "tag": "regular_padeos",
+  "config": {
+    "model_id": "unsloth/Llama-3.2-1B-Instruct",
+    "revision": "5a8abab4a5d6f164389b1079fb721cfab8d7126c",
+    "data_dir": "/home/gofuentes/perfil/runs/data",
+    "train_split": "synth_train",
+    "test_split": "synth_test",
+    "no_verify_data": false,
+    "out_dir": "/home/gofuentes/perfil/runs/regular_padeos/s82",
+    "tag": "regular_padeos",
+    "seed": 82,
+    "lr": 2e-05,
+    "epochs": 4,
+    "batch_size": 128,
+    "grad_accum": 1,
+    "max_grad_norm": 1.0,
+    "max_steps": null,
+    "lbd": 0.0,
+    "beta": 0.0,
+    "predictors": 1,
+    "last_token": -2,
+    "num_slices": 1024,
+    "pad_as_eos": true,
+    "label_scope": "all",
+    "date_string": "26 Jul 2024",
+    "max_eval": null,
+    "holdout": 0,
+    "eval_batch_size": 250,
+    "max_new_tokens": 128,
+    "dtype": "bfloat16"
+  },
+  "tokenizer": {
+    "pad_token": "<|eot_id|>",
+    "pad_token_id": 128009,
+    "eos_token_id": 128009,
+    "vocab_size": 128267
+  },
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.15.0+cu132",
+    "transformers": "5.24.0",
+    "device": "cuda",
+    "gpu": "NVIDIA H100 80GB HBM3"
+  },
+  "train": {
+    "steps": 252,
+    "train_seconds": 96.5,
+    "final_total": 0.17354483902454376,
+    "final_ntp": 0.17354483902454376,
+    "max_memory_gb": 20.58
+  },
+  "eval": {
+    "split": "synth_test",
+    "n": 2000,
+    "exact_match": 0.5685,
+    "eot_rate": 0.96,
+    "eval_seconds": 23.1,
+    "cos_mean": 0.23671378195285797,
+    "sigreg_stat": 153.98802280426025,
+    "erank_pred": 645.8021366565399,
+    "erank_target": 648.887340952191,
+    "erank_joint": 801.393816061468,
+    "norm_pred": 100.45562744140625,
+    "norm_target": 104.3040771484375
+  }
+}

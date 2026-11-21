@@ -1,0 +1,76 @@
+{
+  "since": "2026-11-21",
+  "jobs": [
+    {
+      "job": "10906",
+      "name": "llm-jepa-sigreg",
+      "state": "COMPLETED",
+      "gpus": 1,
+      "gpu_hours": 0.011
+    },
+    {
+      "job": "10907",
+      "name": "llm-jepa-sigreg",
+      "state": "COMPLETED",
+      "gpus": 1,
+      "gpu_hours": 0.01
+    },
+    {
+      "job": "10909_0",
+      "name": "llm-jepa-sigreg",
+      "state": "COMPLETED",
+      "gpus": 1,
+      "gpu_hours": 0.057
+    },
+    {
+      "job": "10909_1",
+      "name": "llm-jepa-sigreg",
+      "state": "COMPLETED",
+      "gpus": 1,
+      "gpu_hours": 0.057
+    },
+    {
+      "job": "10909_2",
+      "name": "llm-jepa-sigreg",
+      "state": "COMPLETED",
+      "gpus": 1,
+      "gpu_hours": 0.057
+    },
+    {
+      "job": "10909_3",
+      "name": "llm-jepa-sigreg",
+      "state": "COMPLETED",
+      "gpus": 1,
+      "gpu_hours": 0.057
+    },
+    {
+      "job": "10909_4",
+      "name": "llm-jepa-sigreg",
+      "state": "COMPLETED",
+      "gpus": 1,
+      "gpu_hours": 0.057
+    },
+    {
+      "job": "10909_5",
+      "name": "llm-jepa-sigreg",
+      "state": "COMPLETED",
+      "gpus": 1,
+      "gpu_hours": 0.058
+    },
+    {
+      "job": "10923",
+      "name": "llm-jepa-sigreg-worker",
+      "state": "COMPLETED",
+      "gpus": 1,
+      "gpu_hours": 2.646
+    },
+    {
+      "job": "10924",
+      "name": "llm-jepa-sigreg-worker",
+      "state": "COMPLETED",
+      "gpus": 1,
+      "gpu_hours": 2.681
+    }
+  ],
+  "total_gpu_hours": 5.69
+}
