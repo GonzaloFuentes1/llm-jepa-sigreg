@@ -5,6 +5,8 @@ arXiv:2509.14252) for Llama-3.2-1B-Instruct on NL-RX-SYNTH, an audit of what the
 training pipeline actually optimizes, and an extension that adds SIGReg (LeJEPA,
 arXiv:2511.08544) to the JEPA embeddings.
 
+Write-up: [Auditing LLM-JEPA: the gain disappears once the baseline learns to stop](https://gonzalofuentes1.github.io/en/notes/llm-jepa-audit.html).
+
 ## Motivation
 
 LLM-JEPA reports that adding a JEPA term to next-token prediction (NTP) raises exact match
